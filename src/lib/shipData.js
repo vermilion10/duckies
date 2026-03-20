@@ -1,4 +1,4 @@
-const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');                                          │
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');                                    
 const SHIP_BASE = [
   {
     id: "akizuki",

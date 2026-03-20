@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Anchor, Shield, Gauge, Crosshair } from 'lucide-react';
 import { useI18n } from '../../lib/i18n';
-const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');                                          │
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');        
 
 const KANCOLLE_IMAGE = "${baseUrl}/assets/images/overview.jpg";
 
