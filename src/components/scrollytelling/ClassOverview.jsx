@@ -68,7 +68,7 @@ export default function ClassOverview() {
           <img
             src={KANCOLLE_IMAGE}
             alt="KanColle Akizuki-class characters"
-            className="w-full h-48 md:h-72 object-cover"
+            className="w-full aspect-[16/9] object-contain"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
           <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6">

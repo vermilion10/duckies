@@ -87,7 +87,7 @@ const SHIP_TRANSLATIONS = {
     {
       nameMeaning: "Bulan Pertama / Bulan Sabit Awal",
       designation: "Kapal Perusak No. 107 → Hatsuzuki",
-      imageCaption: "IJN Hatsuzuki dalam pertempuran terakhirnya di Tanjung Engaño, Oktober 1944",
+      imageCaption: "IJN Hatsuzuki dalam pelayaran uji coba, Desember 1942",
       biography: [
         "Hatsuzuki (初月) adalah kapal ketiga dari kelas Akizuki, dengan nama yang berarti \"Bulan Pertama\" atau \"Bulan Sabit Awal\". Ia dibangun di Maizuru Naval Arsenal dan selesai pada 29 Desember 1942.",
         "Hatsuzuki berpartisipasi dalam berbagai operasi penting di Pasifik, termasuk pertempuran di Laut Filipina dan Pertempuran Teluk Leyte. Ia dikenal karena pertempuran terakhirnya yang heroik di lepas Tanjung Engaño.",
@@ -178,7 +178,7 @@ const SHIP_TRANSLATIONS = {
     {
       nameMeaning: "First Moon / New Crescent Moon",
       designation: "Destroyer No. 107 → Hatsuzuki",
-      imageCaption: "IJN Hatsuzuki during her final battle off Cape Engaño, October 1944",
+      imageCaption: "IJN Hatsuzuki on trial run, Dec 1942",
       biography: [
         "Hatsuzuki (初月) was the third ship of the Akizuki class, her name meaning \"First Moon\" or \"New Crescent Moon\". She was built at Maizuru Naval Arsenal and completed on 29 December 1942.",
         "Hatsuzuki participated in numerous critical operations across the Pacific, including the Battle of the Philippine Sea and the Battle of Leyte Gulf. She is best remembered for her heroic final stand off Cape Engaño.",
