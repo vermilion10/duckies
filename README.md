@@ -23,3 +23,7 @@ A web application for exploring Akizuki-class destroyers.
    ```bash
    npm run build
    ```
+
+---
+Historical content sourced from various public references. KanColle characters are the property of DMM Games & Kadokawa Games.
+
