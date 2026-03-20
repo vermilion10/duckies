@@ -4,7 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import { useI18n } from '../../lib/i18n';
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');    
 
-const HERO_IMAGE = "${baseUrl}/assets/images/hero.png";
+const HERO_IMAGE = `${baseUrl}/assets/images/hero.png`;
 
 export default function HeroSection() {
   const { t } = useI18n();
