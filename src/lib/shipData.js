@@ -19,15 +19,6 @@ const SHIP_BASE = [
     statsValues: ["Mitsubishi Nagasaki", "21 Nov 1941", "31 Aug 1942", "2,700 t (standard)", "33 knots", "~4 months active"],
   },
   {
-    id: "hatsuzuki",
-    name: "Hatsuzuki",
-    kanji: "初月",
-    historicalImage: `${baseUrl}/assets/images/Ships/hatsuzuki.jpg`,
-    kancolleImage: `${baseUrl}/assets/images/Characters/hatsuzuki_kancolle.webp`,
-    survived: false,
-    statsValues: ["Maizuru Naval Arsenal", "3 April 1942", "29 Dec 1942", "2,700 t (standard)", "33 knots", "Cape Engaño"],
-  },
-  {
     id: "suzutsuki",
     name: "Suzutsuki",
     kanji: "涼月",
@@ -35,6 +26,15 @@ const SHIP_BASE = [
     kancolleImage: `${baseUrl}/assets/images/Characters/suzutsuki_kancolle.webp`,
     survived: true,
     statsValues: ["Mitsubishi Nagasaki", "3 March 1942", "29 Dec 1942", "2,700 t (standard)", "33 knots", "War survivor"],
+  },
+  {
+    id: "hatsuzuki",
+    name: "Hatsuzuki",
+    kanji: "初月",
+    historicalImage: `${baseUrl}/assets/images/Ships/hatsuzuki.jpg`,
+    kancolleImage: `${baseUrl}/assets/images/Characters/hatsuzuki_kancolle.webp`,
+    survived: false,
+    statsValues: ["Maizuru Naval Arsenal", "3 April 1942", "29 Dec 1942", "2,700 t (standard)", "33 knots", "Cape Engaño"],
   },
 ];
 
@@ -84,35 +84,14 @@ const SHIP_TRANSLATIONS = {
       fate: "Teruzuki tenggelam pada 12 Desember 1942 di perairan dekat Savo Island, Kepulauan Solomon. Saat bertugas sebagai kapal bendera dalam misi resuplai \"Tokyo Express\", ia diserang oleh PT boat Amerika PT-37 dan PT-40. Torpedo menghantam bagian mesin kapal, menyebabkan kebakaran hebat yang akhirnya mencapai gudang amunisi. Kapal meledak dan tenggelam. Pada 2025, bangkai kapal ini ditemukan di dasar laut Iron Bottom Sound."
     },
 
-    // HATSUZUKI
-    {
-      nameMeaning: "Bulan Pertama / Bulan Sabit Awal",
-      designation: "Kapal Perusak No. 107 → Hatsuzuki",
-      imageCaption: "IJN Hatsuzuki dalam pelayaran uji coba, Desember 1942",
-      biography: [
-        "Hatsuzuki (初月) adalah kapal ketiga dari kelas Akizuki, dengan nama yang berarti \"Bulan Pertama\" atau \"Bulan Sabit Awal\". Ia dibangun di Maizuru Naval Arsenal dan selesai pada 29 Desember 1942.",
-        "Hatsuzuki berpartisipasi dalam berbagai operasi penting di Pasifik, termasuk pertempuran di Laut Filipina dan Pertempuran Teluk Leyte. Ia dikenal karena pertempuran terakhirnya yang heroik di lepas Tanjung Engaño.",
-        "Dalam pertempuran terakhirnya, Hatsuzuki melawan sendirian melawan armada kapal penjelajah ringan dan kapal perusak Amerika untuk memberi waktu bagi kapal induk Jepang yang tersisa untuk melarikan diri. Ia berjuang selama berjam-jam sebelum akhirnya tenggelam — sebuah perjuangan terakhir yang menjadi legenda."
-      ],
-      statsLabels: ["Dibangun di", "Diluncurkan", "Selesai", "Displacement", "Kecepatan", "Pertempuran Terakhir"],
-      kancolleNote: "Di KanColle, Hatsuzuki digambarkan sebagai gadis yang tenang, pendiam, dan sedikit misterius. Meskipun jarang bicara, ia sangat setia dan berdedikasi dalam tugasnya melindungi armada. Sifatnya yang stoic mencerminkan perjuangan heroik kapal aslinya dalam pertempuran terakhir. Ia memiliki rambut pendek berwarna cokelat.",
-      timeline: [
-        { date: "3 April 1942", title: "Peluncuran", description: "Diluncurkan di Maizuru Naval Arsenal.", detail: "Hatsuzuki adalah kapal ketiga yang selesai dari kelas Akizuki, menandai percepatan produksi program kapal perusak anti-udara IJN. Peluncurannya di Maizuru dilakukan di tengah meningkatnya tekanan perang di Pasifik, di mana ancaman udara Sekutu semakin terasa." },
-        { date: "29 Desember 1942", title: "Komisioning", description: "Bergabung dengan IJN dan ditugaskan ke operasi di Pasifik.", detail: "Hatsuzuki bergabung dengan IJN pada hari yang sama dengan Suzutsuki, memperkuat Divisi Perusak 61. Dengan pengalaman pertempuran kakak-kakaknya sebagai pelajaran, awak Hatsuzuki dilatih secara intensif untuk menghadapi realita perang Pasifik yang semakin sengit." },
-        { date: "1943", title: "Operasi Solomon", description: "Bertugas dalam berbagai operasi pengawalan dan resuplai di Kepulauan Solomon.", detail: "Selama 1943, Hatsuzuki menjalani misi pengawalan yang melelahkan di perairan Solomon yang berbahaya. Ia sering beroperasi di malam hari untuk menghindari serangan udara Sekutu, mengandalkan radar dan kemampuan anti-udara kelas Akizuki yang superior." },
-        { date: "19–20 Juni 1944", title: "Pertempuran Laut Filipina", description: "Bertugas sebagai pengawal kapal induk dalam pertempuran yang dikenal sebagai \"Great Marianas Turkey Shoot\".", detail: "Pertempuran ini menjadi bencana bagi penerbangan IJN — Jepang kehilangan sekitar 480 pesawat hanya dalam dua hari, sementara Amerika hanya kehilangan 130. Hatsuzuki berjuang keras menghalau serangan udara Amerika yang bertubi-tubi, namun armada kapal induk Jepang menderita kerusakan parah." },
-        { date: "25 Oktober 1944", title: "Perjuangan Terakhir", description: "Melawan sendirian melawan armada AS di Tanjung Engaño untuk melindungi kapal induk Jepang yang mundur. Tenggelam setelah pertempuran heroik berjam-jam.", detail: "Ini adalah salah satu pertempuran terakhir yang paling heroik dalam sejarah angkatan laut. Hatsuzuki memilih tetap di tempatnya melawan empat cruiser ringan dan sembilan kapal perusak Amerika — seorang diri — agar sisa armada Jepang bisa melarikan diri. Ia menembakkan seluruh amunisinya sebelum akhirnya tenggelam. Awak yang tersisa sekitar 100 orang ikut gugur bersamanya." }
-      ],
-      fate: "Hatsuzuki tenggelam pada 25 Oktober 1944 di lepas Tanjung Engaño selama Pertempuran Teluk Leyte. Dalam salah satu perjuangan terakhir paling heroik dalam sejarah angkatan laut, Hatsuzuki sendirian melawan cruiser ringan dan kapal perusak Amerika untuk memberi waktu bagi kapal induk Jepang yang tersisa untuk melarikan diri. Ia berjuang selama berjam-jam, menembakkan semua senjatanya hingga amunisi habis, sebelum akhirnya tenggelam. Seluruh awaknya yang tersisa — sekitar 100 orang — turut gugur."
-    },
-
+    
     // SUZUTSUKI
     {
       nameMeaning: "Bulan Sejuk (di Musim Gugur)",
       designation: "Kapal Perusak No. 106 → Suzutsuki",
       imageCaption: "IJN Suzutsuki mundur dengan haluan hancur setelah Operasi Ten-Go, April 1945",
       biography: [
-        "Suzutsuki (涼月) adalah kapal keempat dari kelas Akizuki, dengan nama yang berarti \"Bulan Sejuk di Musim Gugur\". Ia dibangun di Mitsubishi Nagasaki Shipyard dan selesai pada 29 Desember 1942. Suzutsuki adalah anggota kelas Akizuki yang paling lama bertahan.",
+        "Suzutsuki (涼月) adalah kapal ketiga dari kelas Akizuki, dengan nama yang berarti \"Bulan Sejuk di Musim Gugur\". Ia dibangun di Mitsubishi Nagasaki Shipyard dan selesai pada 29 Desember 1942. Suzutsuki adalah anggota kelas Akizuki yang paling lama bertahan.",
         "Suzutsuki paling terkenal karena partisipasinya dalam Operasi Ten-Go — misi bunuh diri terakhir kapal perang Yamato pada April 1945. Sebagai salah satu dari delapan kapal pengawal Yamato, Suzutsuki terkena torpedo Amerika yang menghancurkan seluruh haluan kapalnya.",
         "Dalam momen yang menjadi legenda, Suzutsuki berhasil selamat dengan cara mundur — berlayar terbalik (stern-first) sepanjang jalan kembali ke pelabuhan. Kisah keberanian awaknya menjadi salah satu cerita paling menakjubkan dalam sejarah maritim."
       ],
@@ -127,6 +106,28 @@ const SHIP_TRANSLATIONS = {
         { date: "20 November 1945", title: "Dicoret dari Register", description: "Nama dicoret dari daftar angkatan laut. Digunakan sebagai pemecah gelombang hingga dibongkar.", detail: "Setelah Jepang menyerah, Suzutsuki yang rusak parah tidak dapat diperbaiki secara ekonomis. Ia digunakan sebagai pemecah gelombang (breakwater) di pelabuhan — nasib yang ironis namun penuh makna bagi kapal yang telah menolak tenggelam. Pada November 1945, namanya resmi dicoret dari register Angkatan Laut Kekaisaran Jepang." }
       ],
       fate: "Suzutsuki selamat dari perang — satu-satunya dari empat kapal Akizuki-class awal yang bertahan. Setelah haluannya hancur dalam Operasi Ten-Go, ia berlayar mundur kembali ke pelabuhan Sasebo. Kapal yang rusak parah ini kemudian digunakan sebagai pemecah gelombang (breakwater) di pelabuhan. Pada 20 November 1945, namanya dicoret dari register angkatan laut dan ia dijual untuk dibongkar. Suzutsuki adalah anggota kelasnya yang paling lama bertugas."
+    },
+
+    // HATSUZUKI
+    {
+      nameMeaning: "Bulan Pertama / Bulan Sabit Awal",
+      designation: "Kapal Perusak No. 107 → Hatsuzuki",
+      imageCaption: "IJN Hatsuzuki dalam pelayaran uji coba, Desember 1942",
+      biography: [
+        "Hatsuzuki (初月) adalah kapal keempat dari kelas Akizuki, dengan nama yang berarti \"Bulan Pertama\" atau \"Bulan Sabit Awal\". Ia dibangun di Maizuru Naval Arsenal dan selesai pada 29 Desember 1942.",
+        "Hatsuzuki berpartisipasi dalam berbagai operasi penting di Pasifik, termasuk pertempuran di Laut Filipina dan Pertempuran Teluk Leyte. Ia dikenal karena pertempuran terakhirnya yang heroik di lepas Tanjung Engaño.",
+        "Dalam pertempuran terakhirnya, Hatsuzuki melawan sendirian melawan armada kapal penjelajah ringan dan kapal perusak Amerika untuk memberi waktu bagi kapal induk Jepang yang tersisa untuk melarikan diri. Ia berjuang selama berjam-jam sebelum akhirnya tenggelam — sebuah perjuangan terakhir yang menjadi legenda."
+      ],
+      statsLabels: ["Dibangun di", "Diluncurkan", "Selesai", "Displacement", "Kecepatan", "Pertempuran Terakhir"],
+      kancolleNote: "Di KanColle, Hatsuzuki digambarkan sebagai gadis yang tenang, pendiam, dan sedikit misterius. Meskipun jarang bicara, ia sangat setia dan berdedikasi dalam tugasnya melindungi armada. Sifatnya yang stoic mencerminkan perjuangan heroik kapal aslinya dalam pertempuran terakhir. Ia memiliki rambut pendek berwarna cokelat.",
+      timeline: [
+        { date: "3 April 1942", title: "Peluncuran", description: "Diluncurkan di Maizuru Naval Arsenal.", detail: "Hatsuzuki adalah kapal ketiga yang selesai dari kelas Akizuki, menandai percepatan produksi program kapal perusak anti-udara IJN. Peluncurannya di Maizuru dilakukan di tengah meningkatnya tekanan perang di Pasifik, di mana ancaman udara Sekutu semakin terasa." },
+        { date: "29 Desember 1942", title: "Komisioning", description: "Bergabung dengan IJN dan ditugaskan ke operasi di Pasifik.", detail: "Hatsuzuki bergabung dengan IJN pada hari yang sama dengan Suzutsuki, memperkuat Divisi Perusak 61. Dengan pengalaman pertempuran kakak-kakaknya sebagai pelajaran, awak Hatsuzuki dilatih secara intensif untuk menghadapi realita perang Pasifik yang semakin sengit." },
+        { date: "1943", title: "Operasi Solomon", description: "Bertugas dalam berbagai operasi pengawalan dan resuplai di Kepulauan Solomon.", detail: "Selama 1943, Hatsuzuki menjalani misi pengawalan yang melelahkan di perairan Solomon yang berbahaya. Ia sering beroperasi di malam hari untuk menghindari serangan udara Sekutu, mengandalkan radar dan kemampuan anti-udara kelas Akizuki yang superior." },
+        { date: "19–20 Juni 1944", title: "Pertempuran Laut Filipina", description: "Bertugas sebagai pengawal kapal induk dalam pertempuran yang dikenal sebagai \"Great Marianas Turkey Shoot\".", detail: "Pertempuran ini menjadi bencana bagi penerbangan IJN — Jepang kehilangan sekitar 480 pesawat hanya dalam dua hari, sementara Amerika hanya kehilangan 130. Hatsuzuki berjuang keras menghalau serangan udara Amerika yang bertubi-tubi, namun armada kapal induk Jepang menderita kerusakan parah." },
+        { date: "25 Oktober 1944", title: "Perjuangan Terakhir", description: "Melawan sendirian melawan armada AS di Tanjung Engaño untuk melindungi kapal induk Jepang yang mundur. Tenggelam setelah pertempuran heroik berjam-jam.", detail: "Ini adalah salah satu pertempuran terakhir yang paling heroik dalam sejarah angkatan laut. Hatsuzuki memilih tetap di tempatnya melawan empat cruiser ringan dan sembilan kapal perusak Amerika — seorang diri — agar sisa armada Jepang bisa melarikan diri. Ia menembakkan seluruh amunisinya sebelum akhirnya tenggelam. Awak yang tersisa sekitar 100 orang ikut gugur bersamanya." }
+      ],
+      fate: "Hatsuzuki tenggelam pada 25 Oktober 1944 di lepas Tanjung Engaño selama Pertempuran Teluk Leyte. Dalam salah satu perjuangan terakhir paling heroik dalam sejarah angkatan laut, Hatsuzuki sendirian melawan cruiser ringan dan kapal perusak Amerika untuk memberi waktu bagi kapal induk Jepang yang tersisa untuk melarikan diri. Ia berjuang selama berjam-jam, menembakkan semua senjatanya hingga amunisi habis, sebelum akhirnya tenggelam. Seluruh awaknya yang tersisa — sekitar 100 orang — turut gugur."
     }
   ],
 
@@ -175,35 +176,14 @@ const SHIP_TRANSLATIONS = {
       fate: "Teruzuki sank on 12 December 1942 off Savo Island in the Solomon Islands. While serving as flagship on a \"Tokyo Express\" resupply run, she was attacked by American PT boats PT-37 and PT-40. A torpedo struck the engine room, causing a fierce fire that eventually reached the ammunition magazine. The ship exploded and sank. In 2025, her wreck was discovered on the floor of Iron Bottom Sound."
     },
 
-    // HATSUZUKI
-    {
-      nameMeaning: "First Moon / New Crescent Moon",
-      designation: "Destroyer No. 107 → Hatsuzuki",
-      imageCaption: "IJN Hatsuzuki on trial run, Dec 1942",
-      biography: [
-        "Hatsuzuki (初月) was the third ship of the Akizuki class, her name meaning \"First Moon\" or \"New Crescent Moon\". She was built at Maizuru Naval Arsenal and completed on 29 December 1942.",
-        "Hatsuzuki participated in numerous critical operations across the Pacific, including the Battle of the Philippine Sea and the Battle of Leyte Gulf. She is best remembered for her heroic final stand off Cape Engaño.",
-        "In her final battle, Hatsuzuki fought alone against a force of American light cruisers and destroyers to buy time for the surviving Japanese carriers to escape. She fought on for hours before finally sinking — a last stand that became legend."
-      ],
-      statsLabels: ["Built at", "Launched", "Completed", "Displacement", "Speed", "Last Battle"],
-      kancolleNote: "In KanColle, Hatsuzuki is portrayed as a calm, quiet, and slightly mysterious girl. Though she rarely speaks, she is fiercely loyal and dedicated to her duty of protecting the fleet. Her stoic nature mirrors the heroic struggle of her namesake ship in her final battle. She has short brown hair.",
-      timeline: [
-        { date: "3 April 1942", title: "Launched", description: "Launched at Maizuru Naval Arsenal.", detail: "Hatsuzuki was the third completed ship of the Akizuki class, signaling accelerating production of the IJN's anti-aircraft destroyer program. Her launch came as American air power in the Pacific was rapidly growing, making the class's specialized anti-aircraft role ever more critical." },
-        { date: "29 December 1942", title: "Commissioned", description: "Joined the IJN and assigned to Pacific operations.", detail: "Hatsuzuki joined the IJN on the same day as Suzutsuki, reinforcing Destroyer Division 61. With the combat lessons of Akizuki and Teruzuki already learned, Hatsuzuki's crew was intensively trained to face the increasingly brutal realities of Pacific warfare." },
-        { date: "1943", title: "Solomon Operations", description: "Served in various escort and resupply operations in the Solomon Islands.", detail: "Throughout 1943, Hatsuzuki conducted grueling escort missions through the dangerous waters of the Solomon Islands. Operating mainly at night to avoid Allied air attack, she relied heavily on her radar systems and the Akizuki-class's superior anti-aircraft suite to survive in the contested skies." },
-        { date: "19–20 June 1944", title: "Battle of the Philippine Sea", description: "Served as a carrier escort in the battle known as the \"Great Marianas Turkey Shoot\".", detail: "This battle was a catastrophe for IJN aviation — Japan lost approximately 480 aircraft in just two days, while the Americans lost only 130. Hatsuzuki fought desperately to repel relentless American air attacks on the carrier force. The lopsided losses left the IJN's carrier air arm effectively destroyed as a fighting force." },
-        { date: "25 October 1944", title: "Final Stand", description: "Fought alone against US forces off Cape Engaño to shield retreating Japanese carriers. Sunk after hours of heroic combat.", detail: "In one of naval history's most extraordinary last stands, Hatsuzuki positioned herself between the retreating Japanese carriers and an overwhelming American force of four light cruisers and nine destroyers — alone. She fought for hours, expending every last round of ammunition, before being overwhelmed. Her sacrifice allowed the surviving Japanese carriers to escape. Around 100 crew perished with her." }
-      ],
-      fate: "Hatsuzuki sank on 25 October 1944 off Cape Engaño during the Battle of Leyte Gulf. In one of the most heroic last stands in naval history, Hatsuzuki alone fought off American light cruisers and destroyers to give the remaining Japanese carriers time to escape. She fought for hours, firing all her weapons until her ammunition was exhausted, before finally going under. Her remaining crew of around 100 men perished with her."
-    },
-
+    
     // SUZUTSUKI
     {
       nameMeaning: "Cool Moon (in Autumn)",
       designation: "Destroyer No. 106 → Suzutsuki",
       imageCaption: "IJN Suzutsuki reversing to port with bow blown off after Operation Ten-Go, April 1945",
       biography: [
-        "Suzutsuki (涼月) was the fourth ship of the Akizuki class, her name meaning \"Cool Moon in Autumn\". She was built at Mitsubishi's Nagasaki Shipyard and completed on 29 December 1942. Suzutsuki was the longest-serving member of her class.",
+        "Suzutsuki (涼月) was the third ship of the Akizuki class, her name meaning \"Cool Moon in Autumn\". She was built at Mitsubishi's Nagasaki Shipyard and completed on 29 December 1942. Suzutsuki was the longest-serving member of her class.",
         "Suzutsuki is best known for her participation in Operation Ten-Go — the last suicidal sortie of the battleship Yamato in April 1945. As one of Yamato's eight escort ships, Suzutsuki was struck by an American torpedo that blew off her entire bow.",
         "In a moment that became legend, Suzutsuki survived by reversing — sailing stern-first all the way back to port. The courage of her crew navigating a nearly-destroyed ship in reverse became one of the most remarkable stories in maritime history."
       ],
@@ -218,6 +198,27 @@ const SHIP_TRANSLATIONS = {
         { date: "20 November 1945", title: "Struck from Register", description: "Name removed from the naval register. Used as a breakwater before being scrapped.", detail: "After Japan's surrender, the severely damaged Suzutsuki could not be economically repaired. In a final act of service, she was moored as a breakwater in harbor — an ironic yet fitting end for a ship that had refused to sink. On 20 November 1945, her name was formally struck from the Imperial Japanese Navy register, closing the chapter on the last survivor of the original Akizuki-class sisters." }
       ],
       fate: "Suzutsuki survived the war — the only one of the four original Akizuki-class sisters to do so. After her bow was blasted off in Operation Ten-Go, she made the extraordinary journey back to Sasebo port in reverse. After the war, the badly damaged ship was used as a breakwater in harbor. On 20 November 1945, her name was struck from the naval register and she was sold for scrap. Suzutsuki remains the longest-serving member of her class."
+    },
+    // HATSUZUKI
+    {
+      nameMeaning: "First Moon / New Crescent Moon",
+      designation: "Destroyer No. 107 → Hatsuzuki",
+      imageCaption: "IJN Hatsuzuki on trial run, Dec 1942",
+      biography: [
+        "Hatsuzuki (初月) was the fourth ship of the Akizuki class, her name meaning \"First Moon\" or \"New Crescent Moon\". She was built at Maizuru Naval Arsenal and completed on 29 December 1942.",
+        "Hatsuzuki participated in numerous critical operations across the Pacific, including the Battle of the Philippine Sea and the Battle of Leyte Gulf. She is best remembered for her heroic final stand off Cape Engaño.",
+        "In her final battle, Hatsuzuki fought alone against a force of American light cruisers and destroyers to buy time for the surviving Japanese carriers to escape. She fought on for hours before finally sinking — a last stand that became legend."
+      ],
+      statsLabels: ["Built at", "Launched", "Completed", "Displacement", "Speed", "Last Battle"],
+      kancolleNote: "In KanColle, Hatsuzuki is portrayed as a calm, quiet, and slightly mysterious girl. Though she rarely speaks, she is fiercely loyal and dedicated to her duty of protecting the fleet. Her stoic nature mirrors the heroic struggle of her namesake ship in her final battle. She has short brown hair.",
+      timeline: [
+        { date: "3 April 1942", title: "Launched", description: "Launched at Maizuru Naval Arsenal.", detail: "Hatsuzuki was the third completed ship of the Akizuki class, signaling accelerating production of the IJN's anti-aircraft destroyer program. Her launch came as American air power in the Pacific was rapidly growing, making the class's specialized anti-aircraft role ever more critical." },
+        { date: "29 December 1942", title: "Commissioned", description: "Joined the IJN and assigned to Pacific operations.", detail: "Hatsuzuki joined the IJN on the same day as Suzutsuki, reinforcing Destroyer Division 61. With the combat lessons of Akizuki and Teruzuki already learned, Hatsuzuki's crew was intensively trained to face the increasingly brutal realities of Pacific warfare." },
+        { date: "1943", title: "Solomon Operations", description: "Served in various escort and resupply operations in the Solomon Islands.", detail: "Throughout 1943, Hatsuzuki conducted grueling escort missions through the dangerous waters of the Solomon Islands. Operating mainly at night to avoid Allied air attack, she relied heavily on her radar systems and the Akizuki-class's superior anti-aircraft suite to survive in the contested skies." },
+        { date: "19–20 June 1944", title: "Battle of the Philippine Sea", description: "Served as a carrier escort in the battle known as the \"Great Marianas Turkey Shoot\".", detail: "This battle was a catastrophe for IJN aviation — Japan lost approximately 480 aircraft in just two days, while the Americans lost only 130. Hatsuzuki fought desperately to repel relentless American air attacks on the carrier force. The lopsided losses left the IJN's carrier air arm effectively destroyed as a fighting force." },
+        { date: "25 October 1944", title: "Final Stand", description: "Fought alone against US forces off Cape Engaño to shield retreating Japanese carriers. Sunk after hours of heroic combat.", detail: "In one of naval history's most extraordinary last stands, Hatsuzuki positioned herself between the retreating Japanese carriers and an overwhelming American force of four light cruisers and nine destroyers — alone. She fought for hours, expending every last round of ammunition, before being overwhelmed. Her sacrifice allowed the surviving Japanese carriers to escape. Around 100 crew perished with her." }
+      ],
+      fate: "Hatsuzuki sank on 25 October 1944 off Cape Engaño during the Battle of Leyte Gulf. In one of the most heroic last stands in naval history, Hatsuzuki alone fought off American light cruisers and destroyers to give the remaining Japanese carriers time to escape. She fought for hours, firing all her weapons until her ammunition was exhausted, before finally going under. Her remaining crew of around 100 men perished with her."
     }
   ]
 };

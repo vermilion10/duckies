@@ -6,8 +6,8 @@ const sections = [
   { id: "overview", label: "概要" },
   { id: "akizuki", label: "秋月" },
   { id: "teruzuki", label: "照月" },
-  { id: "hatsuzuki", label: "初月" },
   { id: "suzutsuki", label: "涼月" },
+  { id: "hatsuzuki", label: "初月" },
   { id: "footer", label: "終" },
 ];
 
